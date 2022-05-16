@@ -1,4 +1,4 @@
-from time import time, sleep
+from time import time
 from conf import ssh, mongo
 
 import pymongo
