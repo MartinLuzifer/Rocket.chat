@@ -9,8 +9,7 @@ ssh = {
 
 mongo = {
 
-    'DAYS': 90,
-    'MONGO_DB': 'parties'
+    'MONGO_COLLECTION_NAME': 'parties'
 
 }
 

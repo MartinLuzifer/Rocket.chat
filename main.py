@@ -33,7 +33,7 @@ if __name__ == '__main__':
         print(f"ssh {ssh.get('MONGO_USER')}@{ssh.get('MONGO_HOST')}:{ssh.get('MONGO_PORT')} connect...")
 
         client = pymongo.MongoClient('127.0.0.1', server.local_bind_port)
-        db = client[mongo.get('MONGO_DB')]
+        db = client[mongo.get('MONGO_COLLECTION_NAME')]
 
         now = time()
         for db_names in db.list_collection_names():
